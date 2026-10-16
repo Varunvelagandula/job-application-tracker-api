@@ -4,6 +4,9 @@
 
 A full-stack app for tracking job applications through stages (applied, screening, interview, offer, rejected), with a React dashboard and a FastAPI backend.
 
+
+![Dashboard](docs/dashboard.png)
+
 **Stack:** FastAPI, SQLAlchemy, SQLite/PostgreSQL, JWT auth, React (Vite), pytest, GitHub Actions, Docker.
 
 ## Features
