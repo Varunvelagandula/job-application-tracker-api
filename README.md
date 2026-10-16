@@ -1,3 +1,4 @@
+FastAPI + PostgreSQL REST API for tracking job applications: JWT auth, per-user data, status history, SQL analytics, pytest and CI.
 # Job Application Tracker API
 
 FastAPI + PostgreSQL REST API with JWT auth, per-user data isolation, status-change history and SQL analytics.
