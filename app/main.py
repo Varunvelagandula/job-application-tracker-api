@@ -6,6 +6,8 @@ from sqlalchemy.orm import Session
 from . import models, schemas
 from .database import Base, engine, get_db
 from .security import current_user, hash_password, make_token, verify_password
+import os
+from fastapi.middleware.cors import CORSMiddleware
 
 
 @asynccontextmanager
@@ -15,6 +17,14 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title="Job Application Tracker", version="0.1.0", lifespan=lifespan)
+
+origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
