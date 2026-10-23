@@ -2,6 +2,15 @@
 
 # Job Application Tracker
 
+## Live demo
+
+- App: https://jobtracker-web-1qj7.onrender.com
+- API docs: https://job-application-tracker-api-xaff.onrender.com/docs
+- Demo login: `demo@example.com` / `Demo12345`
+
+
+Note: this runs on free hosting. The first load can take about a minute while the server wakes up, and the demo database may be reset from time to time.
+
 A full-stack app for tracking job applications through stages (applied, screening, interview, offer, rejected), with a React dashboard and a FastAPI backend.
 
 
